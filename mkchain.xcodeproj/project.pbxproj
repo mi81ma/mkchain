@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6951B8C0235AC76E00C87CCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6951B8BF235AC76E00C87CCE /* ViewController.swift */; };
 		69CA4B242286E664005CBAFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CA4B232286E664005CBAFF /* AppDelegate.swift */; };
 		69CA4B262286E664005CBAFF /* MoviesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CA4B252286E664005CBAFF /* MoviesListController.swift */; };
 		69CA4B2B2286E665005CBAFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69CA4B2A2286E665005CBAFF /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6951B8BF235AC76E00C87CCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		69CA4B202286E664005CBAFF /* mkchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mkchain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69CA4B232286E664005CBAFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69CA4B252286E664005CBAFF /* MoviesListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				69CA4B2A2286E665005CBAFF /* Assets.xcassets */,
 				69CA4B2C2286E665005CBAFF /* LaunchScreen.storyboard */,
 				69CA4B2F2286E665005CBAFF /* Info.plist */,
+				6951B8BF235AC76E00C87CCE /* ViewController.swift */,
 			);
 			path = NestedCellections;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6951B8C0235AC76E00C87CCE /* ViewController.swift in Sources */,
 				69CA4B3A2286EF27005CBAFF /* MovieRowCell.swift in Sources */,
 				69CA4B382286E893005CBAFF /* MovieGroupCell.swift in Sources */,
 				69CA4B262286E664005CBAFF /* MoviesListController.swift in Sources */,
