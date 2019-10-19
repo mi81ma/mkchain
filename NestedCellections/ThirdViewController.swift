@@ -8,11 +8,11 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class ThirdViewController: UIViewController {
 
     var backgroundImageView: UIImageView = {
 
-        let image = UIImageView(image: #imageLiteral(resourceName: "startRecording"))
+        let image = UIImageView(image: #imageLiteral(resourceName: "onWayOfRecording"))
         return image
     }()
 
@@ -62,7 +62,7 @@ class SecondViewController: UIViewController {
     @objc func onClickMyButton(sender: UIButton){
 
         // 遷移するViewを定義する.
-        let mySecondViewController: UIViewController = ThirdViewController()
+        let mySecondViewController: UIViewController = SecondViewController()
 
         // アニメーションを設定する.
         mySecondViewController.modalTransitionStyle = .coverVertical
@@ -71,9 +71,5 @@ class SecondViewController: UIViewController {
         present(mySecondViewController, animated: true, completion: nil)
     }
 
-
-
 }
-
-
 
