@@ -44,7 +44,7 @@ class SecondViewController: UIViewController {
 //        self.view.addSubview(backImage)
         view.addSubview(imageButton)
 
-//          view.addSubview(imageButton)
+          view.addSubview(imageButton)
 
     }
 
@@ -68,7 +68,7 @@ class SecondViewController: UIViewController {
         mySecondViewController.modalTransitionStyle = .coverVertical
 
         // Viewの移動する.
-        present(mySecondViewController, animated: true, completion: nil)
+        present(mySecondViewController, animated: false, completion: nil)
     }
 
 

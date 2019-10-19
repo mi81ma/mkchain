@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class SuccessViewController: UIViewController {
 
     var backgroundImageView: UIImageView = {
 
-        let image = UIImageView(image: #imageLiteral(resourceName: "onWayOfRecording"))
+        let image = UIImageView(image: #imageLiteral(resourceName: "successRecording"))
         return image
     }()
 
@@ -30,19 +30,15 @@ class ThirdViewController: UIViewController {
 
 
         var imageButton: UIButton = {
-            let uiButton: UIButton = UIButton(frame: CGRect(x: (view.frame.width - 250)/2, y: view.frame.height - 250 - 85, width: 250, height: 250))
+            let uiButton: UIButton = UIButton(frame: CGRect(x: (view.frame.width - 300)/2, y: view.frame.height - 80 - 50, width: 300, height: 80))
 
-            uiButton.setImage(#imageLiteral(resourceName: "microPhoneRed"), for: .normal)
+            uiButton.setImage(#imageLiteral(resourceName: "ViewHistoryButton"), for: .normal)
             uiButton.contentMode = .scaleToFill
             uiButton.addTarget(self, action: #selector(onClickMyButton(sender:)), for: .touchUpInside)
             return uiButton
         }()
 
 
-
-
-//        self.view.addSubview(backImage)
-//        view.addSubview(imageButton)
 
           view.addSubview(imageButton)
 
@@ -55,22 +51,25 @@ class ThirdViewController: UIViewController {
 
     }
 
-         /*
+            /*
          ボタンイベント.
          */
 
         @objc func onClickMyButton(sender: UIButton){
 
-
             // 遷移するViewを定義する.
-            let mySecondViewController: UIViewController = SuccessViewController()
+                      let mySecondViewController: UIViewController = HistoryViewController()
 
-            // アニメーションを設定する.
-            mySecondViewController.modalTransitionStyle = .coverVertical
+                      // アニメーションを設定する.
+                      mySecondViewController.modalTransitionStyle = .coverVertical
 
-            // Viewの移動する.
-            present(mySecondViewController, animated: false, completion: nil)
-        }
+                      // Viewの移動する.
+                      present(mySecondViewController, animated: false, completion: nil)
+                  }
+
 
 }
+
+
+
 
